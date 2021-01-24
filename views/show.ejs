@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX!</title>
+</head>
+<body>
+    <h1>Gotta Catch 'Em All!</h1><br>
+    <h2>
+        <%= pokemonData.name.charAt(0).toUpperCase()+pokemonData.name.slice(1) %> 
+    </h2><br>
+    <img src= "<%= pokemonData.img %>.jpg" alt="<%= pokemonData.name; %>"/><br><br>
+
+    <p><a href="/pokemon"><- Back</a></p>
+    
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+          color: blanchedalmond;
+          background-color: steelblue;
+          font-family: 'Press Start 2P', sans-serif;
+          text-align: center;
+        }
+        img{
+            border-radius: 10%;
+        }
+
+        p{
+            font-size: 70%;
+        }
+
+    </style>
+      
+</body>
+</html>

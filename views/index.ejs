@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX!</title>
+</head>
+<body>
+    <h1>See All The Pokemon!</h1>
+
+    <ul>
+        <% for(let i=0; i<pokemonList.length; i++) { %>
+            <li>
+                <a href="/pokemon/<%=i%>">
+                <%= pokemonList[i].name.charAt(0).toUpperCase()+pokemonList[i].name.slice(1) %>
+                </a>
+            </li>
+        <% } %>
+    </ul>
+    
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+          color: blanchedalmond;
+          background-color: steelblue;
+          font-family: 'Press Start 2P', sans-serif;
+          text-align: center;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            padding-top: 2%;
+        }
+
+    </style>
+      
+</body>
+</html>
